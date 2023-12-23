@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(value) {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            let result;
+
+            if (value == 'adding')
+            {
+                result = a+b;
+                document.getElementById("res").innerHTML = "The Result is " + result + "";
+            } 
+            else if (value == 'subtraction') 
+            {
+                result = a-b;
+                document.getElementById("res").innerHTML = "The Result is " + result + "";
+            } 
+            else if (value == 'multiplication') 
+            {
+                result = a*b;
+                document.getElementById("res").innerHTML = "The Result is " + result + "";
+            } 
+            else if (value == 'division') 
+            {
+                result =a/b;
+                document.getElementById("res").innerHTML = "The Result is " + result + "";
+            }
+        }
+
+        // function adding(a, b) 
+        // {
+        //     return a + b;
+        // }
+
+        // function subtraction(a, b) 
+        // {
+        //     return a - b;
+        // }
+
+        // function multiplication(a, b) 
+        // {
+        //     return a * b;
+        // }
+
+        // function division(a, b) 
+        // {
+        //     if (b == 0) 
+        //     {
+        //         return "Cannot divi by zero!";
+        //     }
+        //     return a / b;
+        // }
+    </script>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        Num1 : <input type="text" name="" id="num1"> <br>
+        Num2 : <input type="text" name="" id="num2"> <br><br>
+        <button type="button" onclick="calculate('adding')">adding</button>&nbsp;
+        <button type="button" onclick="calculate('subtraction')">subtraction</button>&nbsp;
+        <button type="button" onclick="calculate('multiplication')">multiplication</button>&nbsp;
+        <button type="button" onclick="calculate('division')">division</button>
+    </form>
+    <h1 id="res"></h1>
+</body>
+</html>

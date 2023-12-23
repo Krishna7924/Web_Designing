@@ -2,108 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="smoke.css">
-    <title>smoke effect on Name</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
     <style>
-        /* @import
-        url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+        @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* font-family: "Poppins", sans-serif; */
-
         }
 
-        video{
-            object-fit: cover;
+        body
+        {
+            background: #212529;
+            font-family: 'Averia Serif Libre', cursive;
         }
 
-        body{
-            background:#262626 ;
-        }
-
-        h1{
-            position: absolute;
+        .name
+        {
+            position:absolute;
             top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            text-align: center;
-            letter-spacing: 1rem;
-            text-transform: uppercase;
-            color: #f5f5f5;
-            font-size: 5em;
-            font-family: sans-serif;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* width: 500px; */
         }
 
-        h1 span{
+        .name span
+        {
+            color: #fff;
+            font-size: 65px;
+            /* font-size: 45px; */
+            /* letter-spacing: 0.1em; */
+            letter-spacing: 0.5em;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.1);
             display: inline-block;
-            animation: animate 1s  ease-in-out;
-
+            transition: all .5s;
+            animation: anim 2.15s infinite;
         }
 
-        @keyframes animate{
+        @keyframes anim
+        {
             0%{
-                opacity: 0%;
-                transform: rotateY(90deg);
-                filter: blur(10px);
+                color: #ffffff1a;
+                transform: translateY(0);
+                margin-left: 0;
+            }
+            25%{
+                color: #6cbebe;
+                transform: translateY(-15px);
+                margin-left: 20px;
+                text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
             }
             100%{
-                opacity: 1;
-                transform: rotateY(0deg);
-                filter: blur(0px);
+                color: #ffffff1a;
+                transform: translateY(0);
+            }
         }
-        }
-        h1 span:nth-child(1)
+
+        .name span:nth-child(1)
         {
+            animation-delay: 0.1s;
+        }
+        .name span:nth-child(2)
+        {
+            animation-delay: 0.2s;
+        }
+        .name span:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        .name span:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        .name span:nth-child(5){
+            animation-delay: 0.5s;
+        }
+        .name span:nth-child(6){
             animation-delay: 0.6s;
         }
-        h1 span:nth-child(2)
-        {
-            animation-delay: 1s;
+        .name span:nth-child(7){
+            animation-delay: 0.7s;
         }
-        h1 span:nth-child(3)
-        {
-            animation-delay: 1.7s;
+        /* .name span:nth-child(8){
+            animation-delay: 0.8s;
         }
-        h1 span:nth-child(4)
-        {
-            animation-delay: 2.3s;
+        .name span:nth-child(9){
+            animation-delay: 0.9s;
         }
-        h1 span:nth-child(5)
-        {
-            animation-delay: 2.7s;
-        }
-        h1 span:nth-child(6)
-        {
-            animation-delay: 3.2s;
-        }
-        h1 span:nth-child(7)
-        {
-            animation-delay: 3.7s;
-        }
-        h1 span:nth-child(8)
-        {
-            animation-delay: 4s;
-        }
+        .name span:nth-child(10){
+            animation-delay: 1s; */
+        /* } */
+
     </style>
 </head>
 <body>
-    <section>
-        <video src="smoke.mp4" autoplay muted ></video>
-        <!-- <iframe src="https://youtu.be/gsGhUuAKaJw" frameborder="0"></iframe> -->
-        <h1>
-            <span>A</span>
-            <span>B</span>
-            <span>H</span>
-            <span>I</span>
-            <span>S</span>
-            <span>H</span>
-            <span>E</span>
-            <span>K</span>
-        </h1>
-    </section>
+    <div class="container name">
+        <span>K</span>
+        <span>R</span>
+        <span>I</span>
+        <span>S</span>
+        <span>H</span>
+        <span>N</span>
+        <span>A</span>
+        <!-- <span>H</span>
+        <span>I</span> -->
+    </div>
 </body>
 </html>
