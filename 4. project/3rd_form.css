@@ -1,0 +1,37 @@
+
+*{
+    background-repeat: no-repeat;
+}
+body{
+        background-size: cover;
+    }
+.details{
+    border: 2px solid blue;
+    margin: 10px;
+    padding: 20px 40px 50px 40px;
+    position: fixed;
+    top: 100px; 
+    left: 450px; 
+    border-radius: 20px;
+    background-color: rgba(70, 70, 70, 0.412);
+    color: whitesmoke;
+}
+.heading{
+    text-align: center;
+    color: whitesmoke;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.9rem;
+}
+.entry{
+    padding: 8px 100px 3px 10px;
+    margin: 4px;
+}
+#submit{
+    padding: 5px 50px 4px 45px;
+    /* text-align: center; */
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    margin: 2px 0px 0px 70px;
+    border-radius: 10px;
+    font-size: 1rem;
+}

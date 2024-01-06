@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+body {
+    background-size: cover;
+
+}
+.navbar{
+    background-color: black;
+}
+
+.img{
+    margin: 10px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    /* margin: 10px 0px 16px 20px; */ /* jb nav bar logo ke bgl mai lana ho */
+    /* padding: 10px 10px 39px 20px; */
+    margin: 10px 0px 10px 20px;
+    padding: 7px;
+    font-size: 18px;
+}
+.navbar ul{
+    /* display: inline-block; */
+    overflow: auto;
+    /* margin: 0px 0px 0px 60px; */
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(209, 206, 206);
+}
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.details{
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px 40px 50px 40px;
+    position: fixed;
+    top: 250px; 
+    left: 450px; 
+    border-radius: 20px;
+    background-color: rgba(186, 182, 182, 0.6);
+    
+}
+.heading{
+    text-align: center;
+    color: rgb(87, 86, 86);
+    margin: 0px 0px 10px 0px;
+    font-size: 1.9rem;
+}
+.entry{
+    padding: 8px 100px 3px 10px;
+    margin: 4px;
+}
+#submit{
+    padding: 5px 50px 4px 45px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    margin: 2px 0px 0px 70px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
